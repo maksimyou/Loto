@@ -168,7 +168,7 @@ function Registration(login, password, email) {
         login, password, email
     };
     console.log(data)
-    fetch('http://localhost:5000/api/user/registration', {
+    fetch('http://89.104.66.35:5000/api/user/registration', {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -203,7 +203,7 @@ function Join(login, password) {
         login, password
     };
     console.log(data)
-    fetch('http://localhost:5000/api/user/login', {
+    fetch('http://89.104.66.35:5000/api/user/login', {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -241,7 +241,7 @@ function getTicketsUser(id) {
         idUser: id
     };
     console.log(data)
-    fetch('http://localhost:5000/api/tickets/get-user', {
+    fetch('http://89.104.66.35:5000/api/tickets/get-user', {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -263,7 +263,7 @@ function getTicketsUser(id) {
 function setTickets(data) {
 
     console.log(data)
-    fetch('  http://localhost:5000/api/tickets/set', {
+    fetch('  http://89.104.66.35:5000/api/tickets/set', {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -289,7 +289,7 @@ function setTicketsUser(arr) {
         tickets: arr
     }
     console.log(data)
-    fetch('  http://localhost:5000/api/tickets/set-user', {
+    fetch('  http://89.104.66.35:5000/api/tickets/set-user', {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -309,7 +309,7 @@ function setTicketsUser(arr) {
 
 function checkTickets(obj) {
     console.log(obj)
-    fetch('  http://localhost:5000/api/tickets/verification', {
+    fetch('  http://89.104.66.35:5000/api/tickets/verification', {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
