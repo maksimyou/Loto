@@ -1,7 +1,7 @@
 const express = require('express')
 const path = require('path')
 const { fileURLToPath } = require('url')
-const hostname = '89.104.66.35';
+//const hostname = '89.104.66.35';
 
 const PORT = 5020;
 
@@ -13,4 +13,4 @@ app.use(express.static(__dirname))
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'))
 })
-app.listen(PORT, hostname)
+app.listen(PORT)
