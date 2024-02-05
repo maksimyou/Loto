@@ -1,0 +1,153 @@
+body{
+    padding-left: 20px;
+}
+
+.modal-registration {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.196);
+  display: none;
+}
+.close1, .close2{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+.modal-registration-content {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+}
+.login {
+}
+.email {
+}
+.password {
+}
+.btn-form {
+}
+.modal-join {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.196);
+  display: none;
+}
+.modal-join-content {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+}
+
+.header-container{
+  border-bottom: 1px solid black;
+  padding: 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+label{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+input{
+  padding: 5px 9px;
+}
+.logo {
+}
+.authorization {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+}
+.registration{
+  cursor: pointer;
+}
+.join{
+  cursor: pointer;
+}
+.exit{
+  cursor: pointer;
+}
+table {
+    border-collapse: collapse;
+    width: 300px;
+  }
+  td {
+    border: 1px solid black;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+  }
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    float: left;
+  }
+  .tickets {
+    display: flex;
+    gap: 20px;
+  }
+  .title {
+    margin-bottom: 10px;
+  }
+  .save{
+    margin-left: 10px;
+  }
+  .show{
+    margin-left: 10px;
+  }
+  .generate2 {
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+  button:disabled{
+    background-color: #beebbf;
+    cursor:default
+  }
+  .tickets-container{
+    margin-top: 50px;
+  }
+  .table-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  .panel{
+    display: none;
+  }
