@@ -5,22 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Классическая лотерея</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 </head>
 
 <body>
+    <div class="error-notification">
+        Нет доступа! Войдите или зарегистрируйтесь.
+    </div>
+
+
     <div class="modal-registration">
-        <form class="modal-registration-content">
-            <div class="close1">X</div>
+        <form class="modal-registration-content ">
+            <div class="close1"></div>
             <label class="login" for="">Логин
-                <input type="text">
+                <input placeholder="Введите логин" type="text">
             </label>
             <label class="email" for="">Email
-                <input type="text">
+                <input placeholder="Введите email" type="text">
             </label>
             <label class="password" for="">Пароль
-                <input type="password">
+                <input placeholder="Введите пароль" type="password">
             </label>
             <div class="message1"></div>
             <button class="btn-registration">Регистрация</button>
@@ -28,12 +39,12 @@
     </div>
     <div class="modal-join">
         <form class="modal-join-content">
-            <div class="close2">X</div>
+            <div class="close2"></div>
             <label class="login" for="">Логин
-                <input type="text">
+                <input placeholder="Введите логин" type="text">
             </label>
             <label class="password" for="">Пароль
-                <input type="password">
+                <input placeholder="Введите пароль" type="password">
             </label>
             <div class="message2"></div>
             <button class="btn-join">Войти</button>
@@ -41,104 +52,227 @@
     </div>
 
     <header class="header-container">
-        <div class="logo"><img src="./logo.png" alt=""></div>
+        <div class="logo"><img src="./lottery.png" alt=""></div>
+        <nav class="header-nav">
+            <ul>
+                <li class="link-section"><a href="">Как играть</a></li>
+                <li class="link-section"><a href="">Результаты тиражей</a></li>
+                <li class="link-section"><a href="">Где купить билеты</a></li>
+                <li class="link-section"><a href="">Новости и акции</a></li>
+                <li class="link-section"><a href="">Отзывы победителей</a></li>
+            </ul>
+        </nav>
         <div class="authorization">
-            <div class="registration">Регистрация</div>
-            <div class="join">Вход</div>
+            <div class="registration"><span>Регистрация</span></div>
+            <div class="join"><span>Вход</span></div>
         </div>
     </header>
-    <h1>Билет классической лотереи</h1>
-    <br>
-    <div class="tickets">
-        <div class="">
-            <!--<div class="title">Билет 1</div>-->
-            <table>
-                <tr>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                </tr>
-            </table>
-            <br>
-            <table>
-                <tr>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                    <td class='td1'>&nbsp;</td>
-                </tr>
-            </table>
+    <div class="block-of-success">
+        <div class="block-of-success_title-btn">
+            <h1 class="block-of-success_title">Русское лото - шанс стать миллионером!</h1>
+            <div class="block-of-success_subtitle">Играй и выигрывай! Мечты становятся реальностью!</div>
+            <button class="block-of-success_btn">Выбрать билеты</button>
+        </div>
+        <div class="swiper swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="./assets/close-up-people-playing-bingo-together_23-2149193878.jpg"
+                        alt=""></div>
+                <div class="swiper-slide"><img src="./assets/medium-shot-woman-winning-bingo-games_23-2149193882.jpg"
+                        alt=""></div>
+
+                <div class="swiper-slide"><img src="./assets/close-up-senior-people-playing-bingo_23-2149193889.jpg"
+                        alt=""></div>
+                <div class="swiper-slide"><img src="./assets/medium-shot-happy-people-with-smartphone_23-2149193886.jpg"
+                        alt=""></div>
+
+            </div>
+            <!-- If we need pagination -->
+            <!--<div class="swiper-pagination"></div>-->
+
+            <!-- If we need navigation buttons -->
+            <!--<div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>-->
+
+            <!-- If we need scrollbar -->
+            <!--<div class="swiper-scrollbar"></div>-->
         </div>
     </div>
-    <br>
-    <div class="panel">
-        <button class="generate">Генерация</button>
-        <button disabled class="save">Сохранить</button>
-        <button class="show">Показать</button>
-        <button class="generate2">Генерация числа</button>
-        <div class="number">Число:</div>
+
+    <div class="block-buy-tickets-container">
+        <h2 class="choice-of-tickets-title">Выбор билетов</h2>
+        <div class="choice-of-tickets-options">
+            <div class="choice-of-tickets-options-items"></div>
+            <div class="choice-of-ticket-price">
+                <span class="arrow-in-circle"><img src="./assets/arrow-left.png" alt=""></span>
+                Выборите билет
+            </div>
+            <div class="your-tickets-container">
+                <div class="your-tickets"></div>
+            </div>
+            <div class="modal-table">
+                <div class="table-wrap-mini">
+                    <div class="title-mini">Билет № </div>
+                    <div class="blank1-mini">
+                        <div class="row1">
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                        </div>
+                        <div class="row2">
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                        </div>
+                        <div class="row3">
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                        </div>
+                    </div>
+                    <div class="blank2-mini">
+                        <div class="row4">
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                        </div>
+                        <div class="row5">
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                        </div>
+                        <div class="row6">
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                            <div class="cell-mini"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="other-tickets">
+            <div class="other-tickets-btn"><img src="./assets/refresh.png" alt="">Другие билеты</div>
+            <button disabled class="save">Сохранить</button>
+            <button class="show">Показать билеты</button>
+        </div>
     </div>
 
-    <div class="tickets-container">
-
     </div>
+
+    <div class="how-to-play-container">
+        <h2 class="choice-of-tickets-title">Как играть</h2>
+
+        <div class="how-to-play-content">
+            <div class="how-to-play-item">
+                <img class="how-to-play-item-img" src="./assets/ticket-bay.png" alt="">
+                <div class="how-to-play-item-title">1. Купите билет.</div>
+                <div class="how-to-play-item-text">Билеты можно купить в киосках, магазинах, на сайте Русского лото.
+                    Стоимость билета - 100 рублей.</div>
+            </div>
+            <div class="how-to-play-item">
+                <img class="how-to-play-item-img" src="./assets/choices.png" alt="">
+                <div class="how-to-play-item-title">2. Выберите числа.</div>
+                <div class="how-to-play-item-text">
+                    На билете 30 чисел из 90.
+                    Вы можете выбрать числа самостоятельно или воспользоваться автоматическим выбором.
+                </div>
+            </div>
+            <div class="how-to-play-item">
+                <img class="how-to-play-item-img" src="./assets/circulation.png" alt="">
+                <div class="how-to-play-item-title">3. Следите за тиражом.</div>
+                <div class="how-to-play-item-text">
+                    Тиражи Русского лото проходят по воскресеньям в 8:20 по московскому времени.
+                    Трансляцию тиража можно посмотреть на телеканале НТВ или на сайте Русского лото.
+                </div>
+            </div>
+            <div class="how-to-play-item">
+                <img class="how-to-play-item-img" src="./assets/prize.png" alt="">
+                <div class="how-to-play-item-title">4. Выиграйте приз.</div>
+                <div class="how-to-play-item-text">Если в вашем билете выпадут все 15 чисел раньше, чем у других
+                    игроков, вы выигрываете джекпот.
+                    Также есть другие призы за 14, 13, 12 и 11 совпадений.</div>
+            </div>
+            <div class="how-to-play-item">
+                <img class="how-to-play-item-img" src="./assets/prize-get.png" alt="">
+                <div class="how-to-play-item-title">5. Получите приз.</div>
+                <div class="how-to-play-item-text">Вы можете получить приз в киоске, магазине, где купили билет, или на
+                    сайте Русского лото.
+                    Для получения приза вам потребуется паспорт и билет.</div>
+            </div>
+            <div class="how-to-play-item">
+                <img class="how-to-play-item-img" src="./assets/opportunities.png" alt="">
+                <div class="how-to-play-item-title">Дополнительные возможности:</div>
+                <div class="how-to-play-item-text">Вы можете купить несколько билетов.
+                    Вы можете играть в Русское лото онлайн.
+                    Вы можете подписаться на рассылку тиражей.
+                    Удачи!</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="where-to-buy-container">
+        <h2 class="choice-of-tickets-title">Где купить билеты?</h2>
+        <div class="where-to-buy-content">
+            <img class="where-to-buy-img" src="./assets/close-up-on-bingo-game-elements_23-2149181875.jpg" alt="">
+            <div class="where-to-buy-text">На почте, в отделениях банков, магазинах и салонах связи ограниченный выбор
+                билетов. Билеты
+                лотереи «Русское лото» можно приобрести на кассе магазина сети «Пятерочка». А так же на сайте Русского
+                лото. Стоимость билета - 100 рублей.</div>
+        </div>
+    </div>
+
+    <div class="reviews-of-the-winners-container">
+        <div class="choice-of-tickets-title reviews-of-the-winners-title">Отзывы победителей</div>
+        <div class="reviews-of-the-winners-content">
+            <div class="reviews-of-the-winners-slider"></div>
+            <div class="reviews-of-the-winners-form-client">
+                <input placeholder="Введите заголовок" type="text">
+                <textarea placeholder="Введите текст" name="" id="" cols="30" rows="10"></textarea>
+                <button class="btn-reviews-winners">Оставить отзыв</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
-
+    <script src="./swiper.js"></script>
 </body>
 
 </html>
