@@ -617,12 +617,12 @@ document.querySelector(".show").addEventListener("click", () => {
     //generateTable(arr[i].numbers, arr[i].idd)
 })
 
-reviewsWinners.addEventListener('click', () => {
-    let id;
-    let title;
-    let subtitle;
+//reviewsWinners.addEventListener('click', () => {
+//    let id;
+//    let title;
+//    let subtitle;
 
-})
+//})
 
 document.querySelector(".registration").addEventListener("click", () => {
     document.querySelector(".modal-registration").style.display = 'flex';
