@@ -374,6 +374,49 @@ async function checkTickets(obj) {
 }
 
 
+function leaveGeedback(arr) {
+    //let loggin = JSON.parse(localStorage.getItem('login'));
+    //let data = {
+    //    idUser: loggin.id,
+    //    tickets: arr
+    //}
+    console.log(data)
+    fetch('  http://89.104.66.35:5000/api/user/leave-feedback', {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data)
+    })
+        .then(respon => respon.json())
+        .then(data => {
+            console.log(data)
+        })
+        .catch(
+            err => {
+                console.log(err, 'Бла бла блаб лаб ла>')
+            }
+        )
+}
+
+function getAllLeaveGeedback() {
+    //let loggin = JSON.parse(localStorage.getItem('login'));
+    //let data = {
+    //    idUser: loggin.id,
+    //    tickets: arr
+    //}
+    console.log(data)
+    fetch('  http://89.104.66.35:5000/api/user/get-leave-feedback')
+        .then(respon => respon.json())
+        .then(data => {
+            console.log(data)
+        })
+        .catch(
+            err => {
+                console.log(err, 'Бла бла блаб лаб ла>')
+            }
+        )
+}
 
 async function generationManyTicketsWithCheck() {
     let arrAll = [[], [], [], []]
@@ -456,6 +499,7 @@ async function generationManyTicketsWithCheck() {
 let autho = document.querySelector(".authorization");
 let otherTicketsBtn = document.querySelector(".other-tickets-btn");
 let save = document.querySelector(".save");
+let reviewsWinners = document.querySelector('btn-reviews-winners');
 let cells = document.querySelectorAll(".td1");
 let exit = creacteElemennt('div', 'exit', 'Выход')
 let loginn = creacteElemennt('div', 'login', '')
@@ -573,7 +617,12 @@ document.querySelector(".show").addEventListener("click", () => {
     //generateTable(arr[i].numbers, arr[i].idd)
 })
 
+reviewsWinners.addEventListener('click', () => {
+    let id;
+    let title;
+    let subtitle;
 
+})
 
 document.querySelector(".registration").addEventListener("click", () => {
     document.querySelector(".modal-registration").style.display = 'flex';
